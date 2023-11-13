@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: demo
-  replicas: 1
+  replicas: 3
   template:
     metadata:
       labels:
@@ -22,7 +22,7 @@ spec:
           command: ["/app/demo"]
           ports:
             - name: controller
-              containerPort: 8080
+              containerPort: 9080
           resources:
             limits:
               cpu: "1.5"
@@ -43,7 +43,7 @@ metadata:
   namespace: m3test
 spec:
   ports:
-    - port: 8080
+    - port: 9080
       name: demo
   selector:
     app: demo
@@ -74,5 +74,5 @@ spec:
               service:
                 name: demo
                 port:
-                  number: 8080
+                  number: 9080
 
