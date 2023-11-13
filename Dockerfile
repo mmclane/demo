@@ -6,6 +6,6 @@ WORKDIR $APP_DIR
 
 COPY ./bin/demo ./demo
 
-EXPOSE 8080
+EXPOSE 9080
 
 ENTRYPOINT [ "/app/demo" ]
