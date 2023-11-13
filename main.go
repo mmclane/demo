@@ -11,6 +11,6 @@ func main() {
 		fmt.Fprint(w, "<h1>Hello World</h1>")
 	})
 
-	fmt.Println("Server is running on port 8080")
+	fmt.Println("Server is running on http://localhost:8080")
 	http.ListenAndServe(":8080", nil)
 }

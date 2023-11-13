@@ -6,7 +6,6 @@ metadata:
   namespace: m3test
 spec:
   secretName: m3demo-cert
-  secretTemplate:
   issuerRef:
     name: letsencrypt-docnetwork
     kind: ClusterIssuer
