@@ -17,7 +17,7 @@ push:
 k8s:
 	kubectl apply -f ./k8s-configs/deployment.yaml
 
-build: build-app build-container #push k8s
+build: build-app build-container push k8s
 
 cleanup:
 	-kubectl delete -f ./k8s-configs/deployment.yaml
